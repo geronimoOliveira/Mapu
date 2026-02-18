@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapu Arteterapia | Autoconhecimento e Criatividade com Marcia Puntel</title>
+    <meta name="description" content="Descubra o poder da arteterapia na Mapu. Atendimentos individuais e em grupo, presenciais em Campinas e online. Cultive seu bem-estar através da expressão criativa.">
+    <meta name="keywords" content="Arteterapia Campinas, Psicologia Junguiana, Marcia Puntel, Ateliê Terapêutico, Criatividade Corporativa, Tratamento Burnout através da arte">
+    <meta name="author" content="Marcia Puntel">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        terracotta: {
+                            50: '#fdf8f6',
+                            100: '#f9ebe5',
+                            200: '#f3d5cb',
+                            300: '#e9b8a8',
+                            400: '#db927a',
+                            500: '#D47556', // Primary Terracotta
+                            600: '#c45c3d',
+                            700: '#a34830',
+                            800: '#873c2b',
+                            900: '#6f3528',
+                        },
+                        earth: {
+                            cream: '#FDFCF7',
+                            sand: '#F5F0E6',
+                            stone: '#E8E4DC',
+                            olive: '#8B9A7F',
+                            charcoal: '#3D3633',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-earth-charcoal bg-earth-cream antialiased">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 bg-terracotta-500 rounded-full flex items-center justify-center">
+                        <i data-lucide="palette" class="text-white w-5 h-5"></i>
+                    </div>
+                    <span class="font-serif text-2xl font-semibold text-terracotta-700">Mapu</span>
+                </div>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#sobre" class="text-earth-charcoal hover:text-terracotta-600 transition-colors font-medium">Sobre</a>
+                    <a href="#servicos" class="text-earth-charcoal hover:text-terracotta-600 transition-colors font-medium">Serviços</a>
+                    <a href="#metodo" class="text-earth-charcoal hover:text-terracotta-600 transition-colors font-medium">Método</a>
+                    <a href="#contato" class="text-earth-charcoal hover:text-terracotta-600 transition-colors font-medium">Contato</a>
+                </div>
+                
+                <div class="hidden md:flex">
+                    <a href="#contato" class="bg-terracotta-500 text-white px-6 py-2.5 rounded-full hover:bg-terracotta-600 transition-all duration-300 shadow-md hover:shadow-lg font-medium">
+                        Agende sua Sessão
+                    </a>
+                </div>
+                
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-earth-charcoal hover:text-terracotta-600">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-earth-stone">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#sobre" class="block px-3 py-2 text-earth-charcoal hover:text-terracotta-600 hover:bg-terracotta-50 rounded-md">Sobre</a>
+                <a href="#servicos" class="block px-3 py-2 text-earth-charcoal hover:text-terracotta-600 hover:bg-terracotta-50 rounded-md">Serviços</a>
+                <a href="#metodo" class="block px-3 py-2 text-earth-charcoal hover:text-terracotta-600 hover:bg-terracotta-50 rounded-md">Método</a>
+                <a href="#contato" class="block px-3 py-2 text-earth-charcoal hover:text-terracotta-600 hover:bg-terracotta-50 rounded-md">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 min-h-screen flex items-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-terracotta-100 via-earth-cream to-earth-sand opacity-60"></div>
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-terracotta-200/20 rounded-bl-[100px] -z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8 animate-fade-in-up">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-terracotta-100 text-terracotta-700 rounded-full text-sm font-medium">
+                        <i data-lucide="sparkles" class="w-4 h-4"></i>
+                        Psicologia Junguiana & Arteterapia
+                    </div>
+                    
+                    <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-earth-charcoal leading-tight">
+                        Cultive sua <span class="text-terracotta-600 italic">essência</span> através da arte
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
+                        Atendimento clínico individual e em grupo, presencial em Campinas e online. 
+                        Um espaço seguro para explorar o autoconhecimento e a criatividade com <strong>Marcia Puntel</strong>.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contato" class="inline-flex items-center justify-center gap-2 bg-terracotta-500 text-white px-8 py-4 rounded-full hover:bg-terracotta-600 transition-all duration-300 shadow-lg hover:shadow-xl font-medium text-lg">
+                            <i data-lucide="calendar" class="w-5 h-5"></i>
+                            Iniciar Jornada
+                        </a>
+                        <a href="#servicos" class="inline-flex items-center justify-center gap-2 bg-white text-terracotta-600 border-2 border-terracotta-200 px-8 py-4 rounded-full hover:bg-terracotta-50 transition-all duration-300 font-medium text-lg">
+                            Conhecer Serviços
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center gap-6 pt-4 text-sm text-gray-500">
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-terracotta-500"></i>
+                            Campinas - SP
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i data-lucide="video" class="w-4 h-4 text-terracotta-500"></i>
+                            Online
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative lg:pl-12">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=800&h=1000&fit=crop" alt="Atelier de Arteterapia" class="w-full h-[600px] object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                    </div>
+                    
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-xs">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="flex -space-x-2">
+                                <div class="w-10 h-10 rounded-full bg-terracotta-300 flex items-center justify-center text-white text-xs font-bold">MP</div>
+                                <div class="w-10 h-10 rounded-full bg-earth-olive flex items-center justify-center text-white text-xs">
+                                    <i data-lucide="heart" class="w-4 h-4"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="font-serif font-semibold text-earth-charcoal">10+ anos</p>
+                                <p class="text-sm text-gray-500">de experiência</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 italic">"A arte é a mais poderosa ferramenta de transformação interior."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-full h-full border-2 border-terracotta-300 rounded-3xl"></div>
+                        <img src="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=600&h=800&fit=crop" alt="Marcia Puntel" class="relative rounded-3xl shadow-xl w-full object-cover h-[500px]">
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2 space-y-6">
+                    <div class="inline-flex items-center gap-2 text-terracotta-600 font-medium">
+                        <i data-lucide="user" class="w-5 h-5"></i>
+                        Sobre a Terapeuta
+                    </div>
+                    
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-earth-charcoal">
+                        Marcia Puntel
+                    </h2>
+                    
+                    <div class="space-y-4 text-gray-600 leading-relaxed text-lg">
+                        <p>
+                            Psicóloga com formação em <strong>Psicologia Junguiana</strong> e especialista em Arteterapia, dedico minha prática à facilitação do processo de individuação através da arte.
+                        </p>
+                        <p>
+                            O espaço <strong>Mapu</strong> nasceu da união entre o cuidado com a alma e a potência criadora. Aqui, ofereço um ateliê terapêutico onde as imagens simbólicas se tornam pontes para o inconsciente.
+                        </p>
+                        <p>
+                            Acredito que cada pessoa carrega em si uma sabedoria interior que pode ser acessada através da expressão criativa, num processo de cura e integração.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-6 pt-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-terracotta-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="award" class="w-5 h-5 text-terracotta-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-earth-charcoal">CRP ativo</p>
+                                <p class="text-sm text-gray-500">Conselho de Psicologia</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 bg-terracotta-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="graduation-cap" class="w-5 h-5 text-terracotta-600"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-earth-charcoal">Especialização</p>
+                                <p class="text-sm text-gray-500">Arteterapia Junguiana</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="py-24 bg-earth-sand/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <div class="inline-flex items-center gap-2 text-terracotta-600 font-medium mb-4">
+                    <i data-lucide="layers" class="w-5 h-5"></i>
+                    Modalidades de Atendimento
+                </div>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-earth-charcoal mb-6">
+                    Caminhos para o Autoconhecimento
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Ofereço diferentes formatos para atender às suas necessidades, sempre respeitando seu ritmo e singularidade.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-earth-stone/50 hover:border-terracotta-200">
+                    <div class="w-14 h-14 bg-terracotta-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-terracotta-500 transition-colors duration-300">
+                        <i data-lucide="user" class="w-7 h-7 text-terracotta-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-earth-charcoal mb-3">Atendimento Individual</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Sessões personalizadas focadas em seu processo único de individuação. Ideal para tratamento de ansiedade, depressão, burnout e busca por propósito.
+                    </p>
+                    <div class="flex items-center gap-2 text-terracotta-600 font-medium text-sm">
+                        <span>Presencial ou Online</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-earth-stone/50 hover:border-terracotta-200">
+                    <div class="w-14 h-14 bg-terracotta-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-terracotta-500 transition-colors duration-300">
+                        <i data-lucide="users" class="w-7 h-7 text-terracotta-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-earth-charcoal mb-3">Grupos Terapêuticos</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Vivências em grupo que potencializam o trabalho com o inconsciente coletivo. Rodas de conversa, mandalas e técnicas arteterapêuticas diversas.
+                    </p>
+                    <div class="flex items-center gap-2 text-terracotta-600 font-medium text-sm">
+                        <span>Vagas limitadas</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-earth-stone/50 hover:border-terracotta-200">
+                    <div class="w-14 h-14 bg-terracotta-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-terracotta-500 transition-colors duration-300">
+                        <i data-lucide="briefcase" class="w-7 h-7 text-terracotta-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-earth-charcoal mb-3">Criatividade Corporativa</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Workshops para empresas focados em prevenção de burnout, inteligência emocional e desenvolvimento da criatividade em equipes.
+                    </p>
+                    <div class="flex items-center gap-2 text-terracotta-600 font-medium text-sm">
+                        <span>Consulte disponibilidade</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-earth-stone/50 hover:border-terracotta-200">
+                    <div class="w-14 h-14 bg-terracotta-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-terracotta-500 transition-colors duration-300">
+                        <i data-lucide="heart-pulse" class="w-7 h-7 text-terracotta-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="font-serif text-2xl font-semibold text-earth-charcoal mb-3">Tratamento de Burnout</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Programa específico para recuperação do esgotamento profissional através da arte, reconectando você com sua vitalidade e sentido de vida.
+                    </p>
+                    <div class="flex items-center gap-2 text-terracotta-600 font-medium text-sm">
+                        <span>Protocolo especializado</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-earth-stone/50 hover:border-terracotta-200 md:col-span-2 lg:col-span-2">
+                    <div class="flex flex-col md:flex-row md:items-center gap-6">
+                        <div class="w-14 h-14 bg-terracotta-100 rounded-2xl flex items-center justify-center flex-shrink-0 group-hover:bg-terracotta-500 transition-colors duration-300">
+                            <i data-lucide="home" class="w-7 h-7 text-terracotta-600 group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="font-serif text-2xl font-semibold text-earth-charcoal mb-3">Ateliê Terapêutico em Campinas</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Espaço físico acolhedor projetado para inspirar a criatividade. Ambiente preparado com todos os materiais artísticos necessários para sua jornada de autoconhecimento.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=300&h=200&fit=crop" alt="Ateliê" class="rounded-xl w-full md:w-48 h-32 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Method Section -->
+    <section id="metodo" class="py-24 bg-terracotta-500 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <pattern id="pattern" width="60" height="60" patternUnits="userSpaceOnUse">
+                    <circle cx="30" cy="30" r="2" fill="currentColor"/>
+                </pattern>
+                <rect width="100%" height="100%" fill="url(#pattern)"/>
+            </svg>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-terracotta-100 font-medium mb-6">
+                        <i data-lucide="brain" class="w-5 h-5"></i>
+                        Abordagem Junguiana
+                    </div>
+                    
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold mb-6">
+                        A Arte como Caminho para o Inconsciente
+                    </h2>
+                    
+                    <div class="space-y-6 text-terracotta-50 text-lg leading-relaxed">
+                        <p>
+                            Baseio meu trabalho na <strong>Psicologia Analítica de Carl Gustav Jung</strong>, que reconhece o poder das imagens simbólicas no processo de integração psíquica.
+                        </p>
+                        <p>
+                            Na arteterapia junguiana, não julgamos a estética da obra, mas exploramos o que ela revela sobre nossa sombra, nossos arquétipos e nosso Self.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                            <i data-lucide="moon" class="w-6 h-6 mb-2 text-terracotta-200"></i>
+                            <p class="font-semibold">Sonhos</p>
+                            <p class="text-sm text-terracotta-200">Material para arte</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                            <i data-lucide="sun" class="w-6 h-6 mb-2 text-terracotta-200"></i>
+                            <p class="font-semibold">Mandala</p>
+                            <p class="text-sm text-terracotta-200">Integração do Self</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                            <i data-lucide="flame" class="w-6 h-6 mb-2 text-terracotta-200"></i>
+                            <p class="font-semibold">Ativo Imaginação</p>
+                            <p class="text-sm text-terracotta-200">Diálogo com imagens</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20">
+                            <i data-lucide="mountain" class="w-6 h-6 mb-2 text-terracotta-200"></i>
+                            <p class="font-semibold">Arquétipos</p>
+                            <p class="text-sm text-terracotta-200">Forças universais</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=600&h=700&fit=crop" alt="Processo criativo" class="rounded-3xl shadow-2xl">
+                    <div class="absolute -bottom-6 -right-6 bg-white text-gray-800 p-6 rounded-2xl shadow-xl">
+                        <p class="font-serif text-xl italic">"Onde a palavra falta, a imagem fala"</p>
+                        <p class="text-sm text-gray-500 mt-2">- C.G. Jung</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits/Stats Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-terracotta-600 mb-2">500+</div>
+                    <div class="text-gray-600">Sessões realizadas</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-terracotta-600 mb-2">10</div>
+                    <div class="text-gray-600">Anos de experiência</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-terracotta-600 mb-2">50+</div>
+                    <div class="text-gray-600">Workshops ministrados</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-terracotta-600 mb-2">100%</div>
+                    <div class="text-gray-600">Acolhimento humanizado</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-24 bg-earth-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-terracotta-600 font-medium mb-4">
+                        <i data-lucide="mail" class="w-5 h-5"></i>
+                        Entre em Contato
+                    </div>
+                    <h2 class="font-serif text-4xl md:text-5xl font-bold text-earth-charcoal mb-6">
+                        Inicie sua Jornada de Transformação
+                    </h2>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Estou aqui para acompanhá-lo nesse processo. Entre em contato para agendar uma sessão inicial ou tirar dúvidas sobre o trabalho.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-terracotta-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-terracotta-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-earth-charcoal text-lg">Localização</h4>
+                                <p class="text-gray-600">Ateliê Terapêutico em Campinas - SP</p>
+                                <p class="text-sm text-terracotta-600">Atendimento online disponível</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-terracotta-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6 text-terracotta-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-earth-charcoal text-lg">Horários</h4>
+                                <p class="text-gray-600">Segunda a Sexta: 9h às 19h</p>
+                                <p class="text-gray-600">Sábado: 9h às 13h</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-terracotta-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="shield-check" class="w-6 h-6 text-terracotta-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-earth-charcoal text-lg">Profissional Registrada</h4>
+                                <p class="text-gray-600">CRP: XX/XXXXX (Campinas/SP)</p>
+                                <p class="text-sm text-gray-500">Sigilo e ética profissional garantidos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-3xl p-8 md:p-10 shadow-xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Nome completo</label>
+                            <input type="text" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-terracotta-500 focus:ring-2 focus:ring-terracotta-200 outline-none transition-all" placeholder="Seu nome" required>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-terracotta-500 focus:ring-2 focus:ring-terracotta-200 outline-none transition-all" placeholder="seu@email.com" required>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">WhatsApp</label>
+                                <input type="tel" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-terracotta-500 focus:ring-2 focus:ring-terracotta-200 outline-none transition-all" placeholder="(XX) XXXXX-XXXX" required>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Modalidade de interesse</label>
+                            <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-terracotta-500 focus:ring-2 focus:ring-terracotta-200 outline-none transition-all">
+                                <option value="">Selecione...</option>
+                                <option value="individual">Atendimento Individual</option>
+                                <option value="grupo">Grupo Terapêutico</option>
+                                <option value="online">Online</option>
+                                <option value="corporativo">Criatividade Corporativa</option>
+                                <option value="burnout">Tratamento Burnout</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Mensagem</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-terracotta-500 focus:ring-2 focus:ring-terracotta-200 outline-none transition-all resize-none" placeholder="Conte-me um pouco sobre o que você busca..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-terracotta-500 text-white py-4 rounded-xl hover:bg-terracotta-600 transition-all duration-300 font-semibold text-lg shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            Enviar mensagem
+                        </button>
+                        
+                        <p class="text-xs text-gray-500 text-center">
+                            Ao enviar, você concorda com o sigilo profissional e política de privacidade.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-earth-charcoal text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-terracotta-500 rounded-full flex items-center justify-center">
+                            <i data-lucide="palette" class="text-white w-5 h-5"></i>
+                        </div>
+                        <span class="font-serif text-2xl font-semibold">Mapu Arteterapia</span>
+                    </div>
+                    <p class="text-gray-400 max-w-sm">
+                        Espaço dedicado à transformação humana através da expressão criativa e da Psicologia Junguiana.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Links Rápidos</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#sobre" class="hover:text-terracotta-400 transition-colors">Sobre</a></li>
+                        <li><a href="#servicos" class="hover:text-terracotta-400 transition-colors">Serviços</a></li>
+                        <li><a href="#metodo" class="hover:text-terracotta-400 transition-colors">Método</a></li>
+                        <li><a href="#contato" class="hover:text-terracotta-400 transition-colors">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Redes Sociais</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-terracotta-500 transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-terracotta-500 transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-terracotta-500 transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2024 Mapu Arteterapia. Todos os direitos reservados.
+                </p>
+                <p class="text-gray-400 text-sm">
+                    Desenvolvido com <i data-lucide="heart" class="w-4 h-4 inline text-terracotta-500"></i> por Marcia Puntel
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/SEUNUMERO" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition-all duration-300 hover:scale-110 z-50 flex items-center gap-2 group">
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap">Fale comigo</span>
+    </a>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
